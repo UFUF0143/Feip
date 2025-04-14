@@ -37,10 +37,14 @@
     align-items: center;
 }
 .number-phone{
+    font-family: Monserrat, sans-serif;
+    font-size: 14px;
     padding: 0 24px 0 8px;
     color: rgba(102, 102, 102, 1);
 }
 nav{
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
     display: flex;
     gap: 24px;
     margin-left: 80px;
