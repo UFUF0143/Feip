@@ -9,6 +9,7 @@
 
 <style lang="scss">
 button {
+    max-height: 49px;
     padding: 16px 40px;
     border: none;
     background: #029F59;

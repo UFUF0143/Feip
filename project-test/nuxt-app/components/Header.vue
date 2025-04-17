@@ -5,7 +5,7 @@
             <div class="logo-icon">
             <Logo />
         </div>
-        <nav>
+        <nav class="header-links">
                  <a href="#">Реализованные проекты</a>
                  <a href="#">Новости</a>
                  <a href="#">Контакты</a>
@@ -14,6 +14,7 @@
          <div class="number-cont">
              <img class="telephone" src="/image/telephone.png" alt="telephone">
              <span class="number-phone">+7 (900) 900-90-90</span>
+
              <Button>Оставить заявку</Button>
          </div>
     </div>
@@ -42,7 +43,7 @@
     padding: 0 24px 0 8px;
     color: rgba(102, 102, 102, 1);
 }
-nav{
+.header-links{
     font-family: Open Sans, sans-serif;
     font-size: 16px;
     display: flex;
