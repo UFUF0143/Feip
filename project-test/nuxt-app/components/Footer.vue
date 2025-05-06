@@ -12,7 +12,7 @@
              </nav>
         <div class="footer-info">
             <div class="telephone-group">
-            <img class="telephone" src="/image/telephone.png" alt="telephone">
+            <img class="telephone-footer" src="/image/telephone.png" alt="telephone">
              <span class="number-phone-footer">+7 (900) 900-90-90</span></div>
 
              <div class="telephone-group">
@@ -46,6 +46,7 @@ footer{
     justify-content: space-between;
     padding-left: 88px;
     padding-right: 88px;
+    gap: 20px;
 }
 .logo-icon-footer{
     margin-top: 37px;
@@ -141,6 +142,32 @@ footer{
     color: white;
     font-size: 14px;
 }
+.footer-politic{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-
+@media (max-width: 1010px){
+    .footer-group{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 765px){
+    .button-group{
+        flex-wrap: wrap;
+    }
+    .button-group a { 
+        margin-bottom: 16px;
+    }
+    .button-group p{ 
+        margin-bottom: 16px;
+    }
+    .footer-politic{
+        margin: 0
+    }
+    .logo-icon-footer{
+        height: 100%;
+    }
+}
 </style>
