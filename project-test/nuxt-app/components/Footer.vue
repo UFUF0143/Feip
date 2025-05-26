@@ -6,9 +6,9 @@
         </div>
 
         <nav class="footer-links">
-                 <a href="#">Реализованные проекты</a>
-                 <a href="#">Новости</a>
-                 <a href="#">Контакты</a>
+                 <a  class="mobile-link"href="#">Реализованные проекты</a>
+                 <a  class="mobile-link"href="#">Новости</a>
+                 <a  class="mobile-link"href="#">Контакты</a>
              </nav>
         <div class="footer-info">
             <div class="telephone-group">
@@ -131,6 +131,7 @@ footer{
 }
 
 .footer-link {
+    text-decoration: none;
     font-family: Open Sans, sans-serif;
     color: white;
     font-size: 14px;
@@ -138,6 +139,7 @@ footer{
 
 .footer-politic,
 .agree {
+    text-decoration: none;
     font-family: Open Sans, sans-serif;
     color: white;
     font-size: 14px;

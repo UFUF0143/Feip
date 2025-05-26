@@ -6,9 +6,9 @@
           <Logo />
         </div>
         <nav class="header-links">
-          <a href="#">Реализованные проекты</a>
-          <a href="#">Новости</a>
-          <a href="#">Контакты</a>
+          <a href="#" class="mobile-link">Реализованные проекты</a>
+          <a href="#" class="mobile-link">Новости</a>
+          <a href="#" class="mobile-link">Контакты</a>
         </nav>
       </div>
       
@@ -28,9 +28,9 @@
       <!-- Мобильное меню -->
       <div class="mobile-menu" :class="{ 'active': isMenuOpen }">
         <div class="mobile-menu-content">
-          <a href="#">Реализованные проекты</a>
-          <a href="#">Новости</a>
-          <a href="#">Контакты</a>
+          <a href="#" class="mobile-link">Реализованные проекты</a>
+          <a href="#" class="mobile-link">Новости</a>
+          <a href="#" class="mobile-link">Контакты</a>
           <div class="footer-info-menu">
             <div class="telephone-group">
             <img class="telephone-footer" src="/image/telephone white.png" alt="telephone">
@@ -58,12 +58,12 @@
     }
   },
   methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-      // Блокировка прокрутки страницы при открытом меню
-      document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
-    }
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    // Блокировка прокрутки страницы при открытом меню
+    document.body.style.overflow = this.isMenuOpen ? 'hidden' : 'visible';
   }
+}
 }
   </script>
   
@@ -104,12 +104,12 @@
     font-family: Open Sans, sans-serif;
     font-size: 16px;
   }
-  .mobile-menu-content a{
+  .mobile-menu-content {
     color: white;
     font-size: 18px;
   }
 
-  a {
+  .mobile-link{
     text-decoration: none;
     color: rgba(102, 102, 102, 1);
   }
@@ -156,7 +156,7 @@
   }
   
   .mobile-menu.active {
-    background-color: rgba(2, 159, 89, 1);
+    background: rgba(2, 159, 89, 1);
     right: 0;
   }
   
@@ -165,13 +165,6 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 105px;
-  }
-  
-  .mobile-contact {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
   }
   
   .desktop-btn {
