@@ -2,13 +2,21 @@
   <div class="root">
     <Header class="header" />
     <main class="body">
-      <slot /> <!-- или <Nuxt /> для Nuxt 3 -->
+        <div class="main__container _container">
+            <Slider />
+            <BlockInfo />
+        </div>
     </main>
     <Footer class="footer" />
   </div>
 </template>
+<script>
+    import BlockInfo from './components/BlockInfo.vue';
+import Slider from './components/Slider.vue'
+</script>
 
 <style scoped>
+
 .root {
   display: flex;
   flex-direction: column;
@@ -27,7 +35,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Рекомендуется добавить */
+  box-sizing: border-box; 
 }
 </style>
 
