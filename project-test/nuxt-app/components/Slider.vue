@@ -80,10 +80,10 @@
     ];
 </script>
 <style lang="scss">
-    .body{
-        padding: 0 88px;
-    }
+    
     .swiper{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         border-radius: 30px;
         margin-bottom: 120px;

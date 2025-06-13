@@ -113,6 +113,9 @@
     text-decoration: none;
     color: rgba(102, 102, 102, 1);
   }
+  .mobile-menu-content .mobile-link{
+    color: white;
+  }
   
   .number-cont {
     display: flex;

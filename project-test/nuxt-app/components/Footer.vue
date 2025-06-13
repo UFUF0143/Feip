@@ -148,7 +148,14 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
 }
-
+@media (max-width: 1060px){
+    .footer-group{
+        padding-inline: 16px;
+    }
+    .button-group{
+        padding-inline: 16px;
+    }
+}
 @media (max-width: 1010px){
     .footer-group{
         display: flex;
